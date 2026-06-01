@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Order Generator</h1>
+            <p>Trade with precision and speed</p>
+        </header>
+
+        <form id="orderForm">
+            <div class="input-group">
+                <label for="symbol">Símbolo</label>
+                <select id="symbol" name="symbol" required>
+                    <option value="PETR4">PETR4</option>
+                    <option value="VALE3">VALE3</option>
+                    <option value="VIIA4">VIIA4</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="side">Lado</label>
+                <select id="side" name="side" required>
+                    <option value="Compra">Compra</option>
+                    <option value="Venda">Venda</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="quantity">Quantidade</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="99999" step="1" required placeholder="Ex: 100">
+            </div>
+
+            <div class="input-group">
+                <label for="price">Preço (R$)</label>
+                <input type="number" id="price" name="price" min="0.01" max="999.99" step="0.01" required placeholder="Ex: 25.50">
+            </div>
+
+            <button type="submit" id="submitBtn">Enviar Ordem</button>
+        </form>
+
+        <div id="resultMessage" class="result-message hidden">
+            <!-- Result will be injected here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+UpgradeLog.htm
+
+# Build directories
+[Bb]in/
+[Oo]bj/
+
+# QuickFIX log and store folders (if created locally)
+log/
+store/
+**/log/
+**/store/
