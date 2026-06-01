@@ -1,26 +1,27 @@
-# Project Empty Template
+# FIX Order System
 
-Este é um repositório de exemplo para você começar a desenvolver a questão, leia com atenção os requisitos do enunciado da questão na plataforma e seguia as boas práticas sobre como utilizar este repositório.
+Sistema simplificado de envio e controle de exposição de ordens financeiras em tempo real utilizando o protocolo FIX 4.4.
 
+## Tecnologias Utilizadas
 
-## Readme do Repositório
+- C# (.NET 8.0)
+- ASP.NET Core (Minimal APIs)
+- QuickFIXn (FIX 4.4)
+- HTML, CSS e JavaScript
 
-- Deve conter o título do projeto
-- Uma descrição sobre o projeto em frase
-- Deve conter uma lista com linguagem, framework e/ou tecnologias usadas
-- Como instalar e usar o projeto (instruções)
-- Não esqueça o [.gitignore](https://www.toptal.com/developers/gitignore)
-- Se está usando github pessoal, referencie que é um challenge by coodesh:  
+## Como Instalar e Rodar o Projeto
 
->  This is a challenge by [Coodesh](https://coodesh.com/)
+1. Instale o .NET 8.0 SDK em sua máquina.
+2. Em um terminal na pasta OrderAccumulator, inicie o acumulador de ordens:
+```bash
+dotnet run
+```
+3. Em outro terminal na pasta OrderGenerator, inicie o gerador de ordens:
+```bash
+dotnet run
+```
+4. Abra o navegador no endereço: http://localhost:52610
 
-## Finalização e Instruções para a Apresentação
+---
 
-1. Adicione o link do repositório com a sua solução na questão na plataforma
-2. Verifique se o Readme está bom e faça o commit final em seu repositório;
-3. Envie e aguarde as instruções para seguir. Caso o teste tenha apresentação de vídeo, dentro da tela de entrega será possível gravar após adicionar o link do repositório. Sucesso e boa sorte. =)
-
-
-## Suporte
-
-Para tirar dúvidas sobre o processo envie uma mensagem diretamente a um especialista no chat da plataforma. 
+This is a challenge by [Coodesh](https://coodesh.com/)
